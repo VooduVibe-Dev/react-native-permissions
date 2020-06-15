@@ -35,21 +35,12 @@ target 'YourAwesomeProject' do
   permissions_path = '../node_modules/react-native-permissions/ios'
 
   pod 'Permission-BluetoothPeripheral', :path => "#{permissions_path}/BluetoothPeripheral.podspec"
-  pod 'Permission-Calendars', :path => "#{permissions_path}/Calendars.podspec"
   pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
   pod 'Permission-Contacts', :path => "#{permissions_path}/Contacts.podspec"
-  pod 'Permission-FaceID', :path => "#{permissions_path}/FaceID.podspec"
-  pod 'Permission-LocationAlways', :path => "#{permissions_path}/LocationAlways.podspec"
   pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse.podspec"
-  pod 'Permission-MediaLibrary', :path => "#{permissions_path}/MediaLibrary.podspec"
   pod 'Permission-Microphone', :path => "#{permissions_path}/Microphone.podspec"
-  pod 'Permission-Motion', :path => "#{permissions_path}/Motion.podspec"
   pod 'Permission-Notifications', :path => "#{permissions_path}/Notifications.podspec"
   pod 'Permission-PhotoLibrary', :path => "#{permissions_path}/PhotoLibrary.podspec"
-  pod 'Permission-Reminders', :path => "#{permissions_path}/Reminders.podspec"
-  pod 'Permission-Siri', :path => "#{permissions_path}/Siri.podspec"
-  pod 'Permission-SpeechRecognition', :path => "#{permissions_path}/SpeechRecognition.podspec"
-  pod 'Permission-StoreKit', :path => "#{permissions_path}/StoreKit.podspec"
 
 end
 ```
@@ -64,39 +55,20 @@ Then update your `Info.plist` with wanted permissions usage descriptions:
 
   <!-- 🚨 Keep only the permissions used in your app 🚨 -->
 
-  <key>NSAppleMusicUsageDescription</key>
-  <string>YOUR TEXT</string>
   <key>NSBluetoothAlwaysUsageDescription</key>
   <string>YOUR TEXT</string>
   <key>NSBluetoothPeripheralUsageDescription</key>
-  <string>YOUR TEXT</string>
-  <key>NSCalendarsUsageDescription</key>
   <string>YOUR TEXT</string>
   <key>NSCameraUsageDescription</key>
   <string>YOUR TEXT</string>
   <key>NSContactsUsageDescription</key>
   <string>YOUR TEXT</string>
-  <key>NSFaceIDUsageDescription</key>
-  <string>YOUR TEXT</string>
-  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-  <string>YOUR TEXT</string>
-  <key>NSLocationAlwaysUsageDescription</key>
-  <string>YOUR TEXT</string>
   <key>NSLocationWhenInUseUsageDescription</key>
   <string>YOUR TEXT</string>
   <key>NSMicrophoneUsageDescription</key>
   <string>YOUR TEXT</string>
-  <key>NSMotionUsageDescription</key>
-  <string>YOUR TEXT</string>
   <key>NSPhotoLibraryUsageDescription</key>
   <string>YOUR TEXT</string>
-  <key>NSRemindersUsageDescription</key>
-  <string>YOUR TEXT</string>
-  <key>NSSpeechRecognitionUsageDescription</key>
-  <string>YOUR TEXT</string>
-  <key>NSSiriUsageDescription</key>
-  <string>YOUR TEXT</string>
-
   <!-- … -->
 
 </dict>
@@ -375,20 +347,11 @@ PERMISSIONS.ANDROID.WRITE_EXTERNAL_STORAGE;
 // iOS permissions
 
 PERMISSIONS.IOS.BLUETOOTH_PERIPHERAL;
-PERMISSIONS.IOS.CALENDARS;
 PERMISSIONS.IOS.CAMERA;
 PERMISSIONS.IOS.CONTACTS;
-PERMISSIONS.IOS.FACE_ID;
-PERMISSIONS.IOS.LOCATION_ALWAYS;
 PERMISSIONS.IOS.LOCATION_WHEN_IN_USE;
-PERMISSIONS.IOS.MEDIA_LIBRARY;
 PERMISSIONS.IOS.MICROPHONE;
-PERMISSIONS.IOS.MOTION;
 PERMISSIONS.IOS.PHOTO_LIBRARY;
-PERMISSIONS.IOS.REMINDERS;
-PERMISSIONS.IOS.SIRI;
-PERMISSIONS.IOS.SPEECH_RECOGNITION;
-PERMISSIONS.IOS.STOREKIT;
 ```
 
 ### Permissions statuses

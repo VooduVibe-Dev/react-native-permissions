@@ -32,20 +32,11 @@ export const ANDROID = Object.freeze({
 
 export const IOS = Object.freeze({
   BLUETOOTH_PERIPHERAL: 'ios.permission.BLUETOOTH_PERIPHERAL' as const,
-  CALENDARS: 'ios.permission.CALENDARS' as const,
   CAMERA: 'ios.permission.CAMERA' as const,
   CONTACTS: 'ios.permission.CONTACTS' as const,
-  FACE_ID: 'ios.permission.FACE_ID' as const,
-  LOCATION_ALWAYS: 'ios.permission.LOCATION_ALWAYS' as const,
   LOCATION_WHEN_IN_USE: 'ios.permission.LOCATION_WHEN_IN_USE' as const,
-  MEDIA_LIBRARY: 'ios.permission.MEDIA_LIBRARY' as const,
   MICROPHONE: 'ios.permission.MICROPHONE' as const,
-  MOTION: 'ios.permission.MOTION' as const,
   PHOTO_LIBRARY: 'ios.permission.PHOTO_LIBRARY' as const,
-  REMINDERS: 'ios.permission.REMINDERS' as const,
-  SIRI: 'ios.permission.SIRI' as const,
-  SPEECH_RECOGNITION: 'ios.permission.SPEECH_RECOGNITION' as const,
-  STOREKIT: 'ios.permission.STOREKIT' as const,
 });
 
 export const PERMISSIONS = Object.freeze({ANDROID, IOS});
